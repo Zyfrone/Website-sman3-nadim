@@ -1,0 +1,162 @@
+@font-face {
+    font-family: mojangles;
+    src: url(font/Mojang-Regular.ttf);
+}
+
+@keyframes listpop {
+        0%{
+                opacity: 0;
+                translate: 400px 0px;
+        }
+        50%{
+                opacity: 0.3;
+        }
+        100%{
+                opacity: 1;
+                translate: 0px 0px;
+        }
+}
+
+body {
+        font-family: 'mojangles';
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(201, 196, 218));
+        word-spacing: 5PX;
+}
+
+header {
+         background: #303c5f;
+        color: rgb(251, 246, 242);
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        z-index: 2;
+        position: fixed;
+        opacity: 90%;
+        width: 100%;
+        margin-top: -17px;
+        
+}
+header img {
+        width: 90px;
+        margin-right: 15px;
+}
+nav {
+        height: min-content;
+        float: right;
+        margin: auto;
+        margin-right: 28px;
+}
+nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+}
+nav ul li {
+        position: relative;
+        margin: 4px;
+}
+nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+}
+nav ul li a:hover { 
+        background: rgb(54, 61, 106);
+        border-radius: 5px;
+        transition: all 0.3s;
+}
+button:hover {
+        background: rgb(54, 61, 106);
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 18px;
+        border: 2px solid white;
+        padding: 4px;
+        width: 80px;
+}
+button {
+        width: 80px;
+        font-size: 13px;
+}
+nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        background: #303d6c;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+}
+nav ul li ul li {
+        margin: 0;
+        width: 150px;
+}
+nav ul li ul li a {
+        padding: 10px;
+        font-weight: normal;
+}
+
+nav ul li ul li a:hover {
+        background: white;
+        color: black;
+}
+
+nav ul li:hover ul {
+        display: block;
+}
+
+main {
+        padding-top: 150px;
+        margin: 15px;
+        
+}
+
+.sect {
+        background-color: #d1d6ea;
+        border-radius: 8px;
+        padding: 15px;
+        height: min-content;
+        border: 2px solid #878fb5;
+}
+
+.sect:hover {
+        background-color: #4b526e;
+        border-radius: 8px;
+        padding: 15px;
+        transition: all 0.5s;
+        border: 2px solid #222643;
+        color: white;
+        transform: scale(1.03);
+}
+
+.list {
+        animation: listpop 2.5s ease 0s none;
+}
+
+.li:hover {
+        font-weight: bold;
+}
+
+aside {
+        display: block;
+        text-align: left;
+        background-color: #1f2d52;
+        color: #ffffff;
+        padding: 10px;
+}
+
+footer {
+        display: block;
+        text-align: left;
+}
